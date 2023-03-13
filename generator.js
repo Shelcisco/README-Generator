@@ -96,12 +96,7 @@ inquirer.prompt(
 {
     const template =`# ${Title}
 
-    * [Description](#Description)
-    * [Installation](#Installation)
-    * [Usage](#Usage)
-    * [Contribution](#Contribution)
-    * [Test](#Test)
-    * [License](#License)
+ 
     ##Description
     ${Description}
     ##Installation
