@@ -45,13 +45,6 @@ inquirer.prompt(
               validate: (value)=>{ if(value){return true} else {return 'Please input answer to continue'}},    
           },
 
-          {
-              type: 'input',
-              message:"What's the project title?",
-              name:'Test',
-              //validate property to check the user provided input
-              validate: (value)=>{ if(value){return true} else {return 'Please input answer to continue'}},    
-          },
 
           {
               type: 'list',
