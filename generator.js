@@ -13,12 +13,19 @@ inquirer.prompt(
           //validate property to check the user provided input
           validate: (value)=>{ if(value){return true} else {return 'Please input answer to continue'}},
           },
+
           {
               type: 'input',
               message:"Please describe your project",
               name:'Description',
               //validate property to check the user provided input
               validate: (value)=>{ if(value){return true} else {return 'Please input answer to continue'}},    
+          },
+
+          {
+            type: 'input',
+            message:"Table of contents will update after all inputs are received, please press enter to continue",
+            name:'Contents', 
           },
 
           {
@@ -45,6 +52,13 @@ inquirer.prompt(
               validate: (value)=>{ if(value){return true} else {return 'Please input answer to continue'}},    
           },
 
+          {
+            type: 'input',
+            message:"Please provide test instructions",
+            name:'Test',
+            //validate property to check the user provided input
+            validate: (value)=>{ if(value){return true} else {return 'Please input answer to continue'}},    
+          },
 
           {
               type: 'list',
@@ -77,6 +91,7 @@ inquirer.prompt(
 ).then (({
   Title,
   Description,
+  Contents,
   Installation,
   Usage,
   Contribution,
@@ -89,23 +104,30 @@ inquirer.prompt(
 {
     const template =`# ${Title}
 
- 
-    ##Description
-    ${Description}
-    ##Installation
-    ${Installation}
-    ##Usage
-    ${Usage}
-    ##Contribution
-    ${Contribution}
-    ##Test
-    ${Test}
-    ##License
-    ${License}
 
-    ## Questions
-    * Github ;${Github}
-    * Email ;${Email}`;
+## Description
+${Description}
+## Contents
+* Installation
+* Usage
+* Contribution
+* Test
+* License
+* Questions
+## Installation
+${Installation}
+## Usage
+${Usage}
+## Contribution
+${Contribution}
+## Test
+${Test}
+## License
+${License}
+
+## Questions
+* Github: ${Github}
+* Email: ${Email}`;
     
     createNewFile(Title,template);
 }
