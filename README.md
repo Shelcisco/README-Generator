@@ -4,12 +4,15 @@
 ## Description
 Using the README-Generator you can create a professional READ-ME file using the command line. 
 ## Contents
-* Installation
-* Usage
-* Contribution
-* Test
-* License
-* Questions
+
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contribution](#contribution)
+* [Test](#test)
+* [License](#license)
+* [Questions](#questions)
+
 ## Installation
 After copying or cloning the code, run npm i inquirer in the terminal. 
 ## Usage
