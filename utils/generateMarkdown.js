@@ -4,21 +4,24 @@ function renderLicenseBadge(license) {
   let badge = ``
   if (license === `Apache`) {
     badge = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
-  } else if (license === `BSD3`) {
-    badge = `![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)`
-  } else if (license === `GPLv2`) {
-    badge = `![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`
   } else if (license === `LGPL`) {
     badge = `![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)`
-  } else if (license === `MIT`) {
-    badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
+  } else if (license === `BSD3`) {
+    badge = `![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)`
   } else if (license === `MPL`) {
     badge = `![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`
+  } else if (license === `GPLv2`) {
+    badge = `![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`
+ } else if (license === `MIT`) {
+    badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
+ 
   } else {
     return badge
   }
   return badge
 }
+
+
 
 
 
@@ -32,15 +35,15 @@ function renderLicenseLink(license) {
     link = `(https://opensource.org/licenses/Apache-2.0)`
   } else if (license === `BSD3`) {
     link = `(https://opensource.org/licenses/BSD-3-Clause)`
-  } else if (license === `GPLv2`) {
-    link = `(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`
   } else if (license === `LGPL`) {
     link = `(https://www.gnu.org/licenses/lgpl-3.0)`
-  } else if (license === `MIT`) {
-    link = `(https://opensource.org/licenses/MIT)`
+  } else if (license === `GPLv2`) {
+    link = `(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`
   } else if (license === `MPL`) {
     link = `(https://opensource.org/licenses/MPL-2.0)`
-  } else {
+  } else if (license === `MIT`) {
+    link = `(https://opensource.org/licenses/MIT)`
+   } else {
     return link
   }
   return link
