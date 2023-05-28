@@ -1,5 +1,5 @@
 # README-Generator
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 Using the README-Generator you can create a professional READ-ME file using the command line. 
