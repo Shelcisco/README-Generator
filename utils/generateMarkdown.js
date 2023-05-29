@@ -1,18 +1,20 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let badge = ``
-  if (license === `Apache`) {
+  if (license === "Apache") {
     badge = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
-  } else if (license === `LGPL`) {
-    badge = `![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)`
-  } else if (license === `BSD3`) {
-    badge = `![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)`
-  } else if (license === `MPL`) {
+  } else if (license === "LGPL") {
+    badge = `![License: LGPL ](https://img.shields.io/badge/License-LGPL_v3-blue.svg)`
+  } else if (license === "BSD 3") {
+    badge = `![License: BSD 3](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)`
+  } else if (license === "GNU v3.0") {
+    badge = `[!License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
+  } else if (license === "MPL 2.0") {
     badge = `![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`
-  } else if (license === `GPLv2`) {
+  } else if (license === "GPL v2") {
     badge = `![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`
- } else if (license === `MIT`) {
+ } else if (license === "MIT") {
     badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
  
   } else {
@@ -20,11 +22,6 @@ function renderLicenseBadge(license) {
   }
   return badge
 }
-
-
-
-
-
 
 // function that returns the license link
 // If there is no license, return an empty string
@@ -64,7 +61,7 @@ function renderLicenseSection(license) {
 
 
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 ${renderLicenseBadge(data.license)}
@@ -89,8 +86,6 @@ ${data.installation}
 ## Usage
 
 ${data.usage}
-
-## License
 
 ${renderLicenseSection(data.license)}
 
