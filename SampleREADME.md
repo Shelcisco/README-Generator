@@ -1,9 +1,9 @@
-# jjewbjdkew
-
+# sample title
+![License: BSD 3](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)
 
 ## Description
 
-kenfjwkef
+sample read me
 
 ## Contents
 * [Description](#description)
@@ -16,31 +16,29 @@ kenfjwkef
 
 ## Installation
 
-wlefnjewkfn
+sample install
 
 ## Usage
 
-kwfnkjewfnw
+sampling
 
 ## License
-
-## License
-  This application is covered under the MIT License license. Click here [link] for more details.
+  This application is covered under the BSD 3 license. Click here [link] for more details.
 
 
 
 ## Contribution
 
-efjnkwjefn
+sample sample
 
 ## Tests
 
-jwkefnjkwef
+sample test
 
 ## Questions
 
 If you have any questions, feel free to reach out:
 
-GitHub: [ewjkdnewd](https://github.com/ewjkdnewd)
+GitHub: [Shelcisco](https://github.com/Shelcisco)
 
-Email: lkdwnmqkd
+Email: Email@email.com
